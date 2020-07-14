@@ -1,13 +1,11 @@
 import Link from 'next/link';
 import Layout from '../components/Layout';
 import {Cube} from '../components/3d/cube';
-import {Line} from '../components/3d/line';
+import { Lines } from '../components/3d/lines';
+import { Flag } from '../components/3d/flag';
 import Button from '@material-ui/core/Button/Button';
 
 const IndexPage = () => {
-    const [activeScript, setActiveScript] = useState(String)
-
-
 
     return (
         <Layout title="Home | Next.js + TypeScript Example">
@@ -20,11 +18,11 @@ const IndexPage = () => {
             <Button variant="contained" onClick={() => {Cube()}}>
                 Cubo
             </Button>
-            <Button variant="contained" color="primary" onClick={() => {Line()}}>
+            <Button variant="contained" color="primary" onClick={() => {Lines()}}>
                 Lineas
             </Button>
-            <Button variant="contained" color="secondary" onClick={() => {Canvas()}}>
-                Cuadricula?
+            <Button variant="contained" color="secondary" onClick={() => {Flag()}}>
+                Bandera de la padpadasches!
             </Button>
         </Layout>
     )
